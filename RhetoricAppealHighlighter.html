@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rhetorical Appeals Highlighter</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+        line-height: 1.6;
+    }
+    .toolbar {
+        margin-bottom: 15px;
+    }
+    button {
+        padding: 8px 14px;
+        margin: 4px;
+        border: none;
+        cursor: pointer;
+        border-radius: 4px;
+        font-weight: bold;
+    }
+    .Logos { background-color: #a3d5ff; }
+    .Pathos { background-color: #ffb3c6; }
+    .Ethos { background-color: #c3f7c3; }
+    .Kairos { background-color: #ffe7a1; }
+
+    .eraser { background-color: #e0e0e0; }
+    .undo { background-color: #d4c4ff; }
+    .reset { background-color: #ffcccc; }
+    .save { background-color: #c2ffd2; }
+
+    #textBox {
+        border: 1px solid #ccc;
+        padding: 15px;
+        min-height: 200px;
+        white-space: pre-wrap;
+    }
+    mark {
+        padding: 2px;
+        border-radius: 3px;
+    }
+</style>
+</head>
+
+<body>
+
+<h2>Rhetorical Appeals Highlighter</h2>
+
+<div class="toolbar">
+    <button class="Logos" onclick="setMode('Logos')">Logos</button>
+    <button class="Pathos" onclick="setMode('Pathos')">Pathos</button>
+    <button class="Ethos" onclick="setMode('Ethos')">Ethos</button>
+    <button class="Kairos" onclick="setMode('Kairos')">Kairos</button>
+
+    <button class="eraser" onclick="setMode('erase')">Eraser</button>
+    <button class="undo" onclick="undo()">Undo</button>
+    <button class="reset" onclick="resetHighlights()">Reset</button>
+    <button class="save" onclick="saveWork()">Save</button>
+</div>
+
+<div id="textBox" contenteditable="true">
+    Paste or type your text here...
+</div>
+
+<script>
+let mode = null;
+let historyStack = [];
+
+function saveState() {
+    historyStack.push(document.getElementById("textBox").innerHTML);
+}
+
+function setMode(newMode) {
+    mode = newMode;
+}
+
+document.getElementById("textBox").addEventListener("mouseup", function () {
+    let selection = window.getSelection();
+    if (selection.toString().length === 0 || !mode) return;
+
+    saveState();
+
+    let range = selection.getRangeAt(0);
+    let span = document.createElement(mode === "erase" ? "span" : "mark");
+
+    if (mode !== "erase") {
+        span.className = mode;
+    }
+
+    span.appendChild(range.extractContents());
+    range.insertNode(span);
+
+    selection.removeAllRanges();
+});
+
+function undo() {
+    if (historyStack.length > 0) {
+        document.getElementById("textBox").innerHTML = historyStack.pop();
+    }
+}
+
+function resetHighlights() {
+    saveState();
+    let box = document.getElementById("textBox");
+    box.innerHTML = box.innerText;
+}
+
+function saveWork() {
+    let content = document.getElementById("textBox").innerHTML;
+    let blob = new Blob([content], { type: "text/html" });
+    let url = URL.createObjectURL(blob);
+
+    let a = document.createElement("a");
+    a.href = url;
+    a.download = "rhetorical_highlights.html";
+    a.click();
+
+    URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>
