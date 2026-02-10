@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Color Highlighter Tool (7 Labels)</title>
+<title>Color Grammar Highlighter (10 Labels)</title>
 
 <style>
     body {
@@ -65,13 +65,15 @@
     <button class="color-btn orange" onclick="applyColor('#e67e22')">Dep-Participle</button>
     <button class="color-btn teal" onclick="applyColor('#1abc9c')">Dep-Other</button>
 
+    <button class="color-btn" data-color="#c4b5fd" title="Marks a 'that' dependent clause">that DepClause</button>
+    <button class="color-btn" data-color="#f9a8d4" title="Marks a 'whenever' dependent clause">whenever DepClause</button>
+    <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
+    
     <button class="color-btn eraser" onclick="eraseFormatting()">Eraser</button>
     <button class="color-btn undo" onclick="undoAction()">Undo</button>
     <button class="color-btn reset" onclick="resetText()">Reset</button>
     <button class="color-btn save" onclick="saveHighlights()">Save</button>
-    <button class="color-btn" data-color="#c4b5fd" title="Marks a 'that' dependent clause">that DepClause</button>
-    <button class="color-btn" data-color="#f9a8d4" title="Marks a 'whenever' dependent clause">whenever DepClause</button>
-    <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
+    
 </div>
 
 <br>
@@ -255,4 +257,5 @@ document.querySelectorAll(".color-btn[data-color]").forEach(btn => {
 </script>
 
 </body>
+
 </html>
