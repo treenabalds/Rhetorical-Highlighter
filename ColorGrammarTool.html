@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Color Highlighter Tool (7 Labels)</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 40px;
+        max-width: 800px;
+        line-height: 1.6;
+    }
+
+    #editor {
+        width: 100%;
+        min-height: 200px;
+        border: 1px solid #ccc;
+        padding: 12px;
+        border-radius: 6px;
+        outline: none;
+    }
+
+    .color-btn {
+        padding: 8px 14px;
+        margin: 6px 8px 6px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        color: white;
+        font-weight: bold;
+    }
+
+    .red { background-color: #e74c3c; }
+    .blue { background-color: #3498db; }
+    .green { background-color: #2ecc71; }
+    .yellow { background-color: #f1c40f; color: black; }
+    .purple { background-color: #9b59b6; }
+    .orange { background-color: #e67e22; }
+    .teal { background-color: #1abc9c; }
+
+    .eraser { background-color: #555; }
+    .undo { background-color: #333; }
+    .reset { background-color: #8e44ad; }
+    .save { background-color: #16a085; }
+
+    .color-btn[data-color="#c4b5fd"] { background-color: #c4b5fd; }
+    .color-btn[data-color="#f9a8d4"] { background-color: #f9a8d4; }
+    .color-btn[data-color="#fdba74"] { background-color: #fdba74; }
+</style>
+
+</head>
+<body>
+
+<h1>Color Highlighter Tool</h1>
+<p>Use this tool to practice finding sentence boundaries: commas, dashes, colons, periods, parentheses, etc. Highlight text, then click a label to apply its color. Ensure that any boundaries belonging to a particular phrases stay within its own highlighted area. No punctuation should be left un-highlighted. Use Eraser, Undo, Reset, or Save as needed.</p>
+
+<div>
+    <button class="color-btn red" onclick="applyColor('#e74c3c')">Independent</button>
+    <button class="color-btn blue" onclick="applyColor('#3498db')">Dep-PrepPhrase</button>
+    <button class="color-btn green" onclick="applyColor('#2ecc71')">Dep-SubordConj</button>
+    <button class="color-btn yellow" onclick="applyColor('#f1c40f')">Between Dashes</button>
+    <button class="color-btn purple" onclick="applyColor('#9b59b6')">Between Commas</button>
+
+    <button class="color-btn orange" onclick="applyColor('#e67e22')">Dep-Participle</button>
+    <button class="color-btn teal" onclick="applyColor('#1abc9c')">Dep-Other</button>
+
+    <button class="color-btn eraser" onclick="eraseFormatting()">Eraser</button>
+    <button class="color-btn undo" onclick="undoAction()">Undo</button>
+    <button class="color-btn reset" onclick="resetText()">Reset</button>
+    <button class="color-btn save" onclick="saveHighlights()">Save</button>
+    <button class="color-btn" data-color="#c4b5fd" title="Marks a 'that' dependent clause">that DepClause</button>
+    <button class="color-btn" data-color="#f9a8d4" title="Marks a 'whenever' dependent clause">whenever DepClause</button>
+    <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
+</div>
+
+<br>
+
+<div id="editor" contenteditable="true">
+    In 1948, Swiss chemist George de Mestral was
+impressed with the clinging power of burrs snagged
+in his dog's fur and on his pant legs after he returned
+from a hike. While examining the burrs under a
+microscope, he observed many hundreds of small
+fibers that grabbed like hooks. He experimented
+with replicas of the burrs and eventually invented
+Velcro, a synthetic clinging fabric that was first
+marketed as "the zipperless zipper." In the 1960s,
+NASA used de Mestral's invention on space suits,
+and now, of course, we see it everywhere.
+You might say that de Mestral was the father of
+biomimicry, an increasingly essential field that stud-
+ies nature, looking for efficiencies in materials and
+systems, and asks the question "How can our homes,
+our electronics, and our cities work better?" As one
+biomimetics company puts it: "Nature is the largest
+laboratory that ever existed and ever will."
+Architecture is one field that is constantly
+exploring new ways to incorporate biomimicry.
+Architects have studied everything from beehives to
+beaver dams to learn how to best use materials,
+geometry, and physics in buildings. Termite mounds,
+for example, very efficiently regulate temperature,
+humidity, and airflow, so architects in Zimbabwe are
+working to apply what they've learned from termite
+mounds to human-made structures.
+Says Michael Pawlyn, author of Biomimicry in
+Architecture, "If you look beyond the nice shapes
+in nature and understand the principles behind
+them, you can find some adaptations that can lead
+to new, innovative solutions that are radically more
+resource-efficient. It's the direction we need to take
+in the coming decades."
+Designers in various professional fields are draw-
+ing on biomimicry; for example, in optics, scientists
+have examined the surface of insect eyes in hopes of
+reducing glare on handheld device screens. Engi-
+neers in the field of robotics worked to replicate the
+property found in a gecko's feet that allows adhesion
+to smooth surfaces.
+Sometimes what scientists learn from nature isn't
+more advanced, but simpler. The abalone shrimp, for
+example, makes its shell out of calcium carbonate,
+the same material as soft chalk. It's not a rare or
+complex substance, but the unique arrangement of
+the material in the abalone's shell makes it extremely
+tough. The walls of the shell contain microscopic
+pieces of calcium carbonate stacked like bricks,
+which are bound together using proteins just as
+concrete mortar is used. The result is a shell three
+thousand times harder than chalk and as tough as
+Kevlar® (the material used in bullet-proof vests).
+Often it is necessary to look at the nanoscale
+structures of a living material's exceptional properties
+in order to re-create it synthetically. Andrew Parker,
+an evolutionary biologist, looked at the skin of the
+thorny devil (a type of lizard) under a scanning elec-
+tron microscope, in search of the features that let the
+animal channel water from its back to its mouth.
+Examples like this from the animal world abound.
+Scientists have learned that colorful birds don't
+always have pigment in their wings but are some-
+times completely brown; it's the layers of keratin
+in their wings that produce color. Different colors,
+which have varying wavelengths, reflect differently
+through keratin. The discovery of this phenomenon
+can be put to use in creating paints and cosmetics
+that won't fade or chip. At the same time, paint for
+outdoor surfaces can be made tougher by copying
+the structures found in antler bone. Hearing aids
+are being designed to capture sound as well as the
+ears of the Ormia fly do. And why can't we have a
+self-healing material like our own skin? Researchers
+at the Beckman Institute at the University of Illinois
+are creating just that; they call it an "autonomic
+materials system." A raptor's feathers, a whale's fluke,
+a mosquito's proboscis—all have functional features
+we can learn from.
+The driving force behind these innovations, aside
+from improved performance, is often improved
+energy efficiency. In a world where nonrenew-
+able energy resources are dwindling and carbon
+emissions threaten the planet's health, efficiency has
+never been more important. Pawlyn agrees: "For
+me, biomimicry is one of the best sources of inno-
+vation to get to a world of zero waste because those
+are the rules under which biological life has had to
+exist."
+Biomimicry is a radical field and one whose prac-
+titioners need to be radically optimistic, as Pawlyn
+is when he says, "We could use natural products
+such as cellulose, or even harvest carbon from the
+atmosphere to create bio-rock.
+</div>
+
+<script>
+let historyStack = [];
+let originalText = "";
+
+window.onload = function() {
+    const editor = document.getElementById("editor");
+    originalText = editor.innerHTML;
+};
+
+function saveState() {
+    const editor = document.getElementById("editor");
+    historyStack.push(editor.innerHTML);
+}
+
+function applyColor(color) {
+    let selection = window.getSelection();
+    if (!selection.rangeCount) return;
+
+    saveState();
+
+    let range = selection.getRangeAt(0);
+    let span = document.createElement("span");
+    span.style.backgroundColor = color;
+
+    range.surroundContents(span);
+}
+
+function eraseFormatting() {
+    let selection = window.getSelection();
+    if (!selection.rangeCount) return;
+
+    saveState();
+
+    let range = selection.getRangeAt(0);
+    let contents = range.extractContents();
+
+    // Remove ALL span wrappers inside the selection
+    contents.querySelectorAll("span").forEach(span => {
+        while (span.firstChild) {
+            span.parentNode.insertBefore(span.firstChild, span);
+        }
+        span.remove();
+    });
+
+    range.insertNode(contents);
+}
+
+function undoAction() {
+    if (historyStack.length === 0) return;
+    const editor = document.getElementById("editor");
+    editor.innerHTML = historyStack.pop();
+}
+
+function resetText() {
+    saveState();
+    document.getElementById("editor").innerHTML = originalText;
+}
+
+function saveHighlights() {
+    const editor = document.getElementById("editor").innerHTML;
+
+    const blob = new Blob(
+        [`<html><body>${editor}</body></html>`],
+        { type: "text/html" }
+    );
+
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = "highlights.html";
+    link.click();
+    URL.revokeObjectURL(url);
+}
+document.querySelectorAll(".color-btn[data-color]").forEach(btn => {
+    btn.addEventListener("click", () => {
+        let color = btn.getAttribute("data-color");
+        applyColor(color);
+    });
+});
+</script>
+
+</body>
+</html>
