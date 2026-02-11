@@ -59,15 +59,15 @@
     <button class="color-btn red" onclick="applyColor('#e74c3c')">Independent</button>
     <button class="color-btn blue" onclick="applyColor('#3498db')">Dep-PrepPhrase</button>
     <button class="color-btn green" onclick="applyColor('#2ecc71')">Dep-SubordConj</button>
-    <button class="color-btn yellow" onclick="applyColor('#f1c40f')">Between Dashes</button>
-    <button class="color-btn purple" onclick="applyColor('#9b59b6')">Between Commas</button>
+    <button class="color-btn yellow" onclick="applyColor('#f1c40f')">Dash Sandwich</button>
+    <button class="color-btn purple" onclick="applyColor('#9b59b6')">Comma Sandwich</button>
+    <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
 
     <button class="color-btn orange" onclick="applyColor('#e67e22')">Dep-Participle</button>
-    <button class="color-btn teal" onclick="applyColor('#1abc9c')">Dep-Other</button>
-
     <button class="color-btn" data-color="#c4b5fd" title="Marks a 'that' dependent clause">that DepClause</button>
-    <button class="color-btn" data-color="#f9a8d4" title="Marks a 'whenever' dependent clause">whenever DepClause</button>
-    <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
+    <button class="color-btn" data-color="#f9a8d4" title="Marks a 'whenever' dependent clause">when(ever) DepClause</button>
+
+    <button class="color-btn teal" onclick="applyColor('#1abc9c')">Dep-Other</button>
     
     <button class="color-btn eraser" onclick="eraseFormatting()">Eraser</button>
     <button class="color-btn undo" onclick="undoAction()">Undo</button>
@@ -175,5 +175,6 @@ document.querySelectorAll(".color-btn[data-color]").forEach(btn => {
 </body>
 
 </html>
+
 
 
