@@ -56,18 +56,18 @@
 <p>Use this tool to practice finding sentence boundaries: commas, dashes, colons, periods, parentheses, etc. Highlight text, then click a label to apply its color. Ensure that any boundaries belonging to a particular phrase stay within their own highlighted area. No punctuation should be left un-highlighted. Use Eraser, Undo, Reset, or Save as needed. Unfortunately, the eraser only works if used immediately after highlighting. This is a work in progress...</p>
 
 <div>
-    <button class="color-btn red" onclick="applyColor('#e74c3c')">Independent</button>
-    <button class="color-btn blue" onclick="applyColor('#3498db')">Dep-PrepPhrase</button>
-    <button class="color-btn green" onclick="applyColor('#2ecc71')">Dep-SubordConj</button>
-    <button class="color-btn yellow" onclick="applyColor('#f1c40f')">Dash Sandwich</button>
-    <button class="color-btn purple" onclick="applyColor('#9b59b6')">Comma Sandwich</button>
+    <button class="color-btn red" onclick="applyColor('#e74c3c')" title="A clause containing a subject and verb and which forms a full thought on its own.">Independent</button>
+    <button class="color-btn blue" onclick="applyColor('#3498db')" title="A dependent clause introduced by a prepositional phrase">Dep-PrepPhrase</button>
+    <button class="color-btn green" onclick="applyColor('#2ecc71')" title="A dependent clause introduced by a subordinating conjunction">Dep-SubordConj</button>
+    <button class="color-btn yellow" onclick="applyColor('#f1c40f')"title="A dependent clause sandwiched between two dashes">Dash Sandwich</button>
+    <button class="color-btn purple" onclick="applyColor('#9b59b6')" title="A dependent clause sandwiched between two commas">Comma Sandwich</button>
     <button class="color-btn" data-color="#fdba74" title="Marks a Subject, dependent clause, Verb Object pattern">S, d, VO</button>
 
-    <button class="color-btn orange" onclick="applyColor('#e67e22')">Dep-Gerund</button>
+    <button class="color-btn orange" onclick="applyColor('#e67e22')" title="A dependent clause introduced by the -ing form of a verb (gerund)">Dep-Gerund</button>
     <button class="color-btn" data-color="#c4b5fd" title="Marks a dependent clause beginning with 'that'">that DepClause</button>
     <button class="color-btn" data-color="#f9a8d4" title="Marks a dependent clause that begins with 'when' or 'whenever'">when(ever) DepClause</button>
 
-    <button class="color-btn teal" onclick="applyColor('#1abc9c')">Dep-Other</button>
+    <button class="color-btn teal" onclick="applyColor('#1abc9c')" title="Marks a dependent clause that doesn't fall into any of the other categories">Dep-Other</button>
     
     <button class="color-btn eraser" onclick="eraseFormatting()">Eraser</button>
     <button class="color-btn undo" onclick="undoAction()">Undo</button>
@@ -175,6 +175,7 @@ document.querySelectorAll(".color-btn[data-color]").forEach(btn => {
 </body>
 
 </html>
+
 
 
 
