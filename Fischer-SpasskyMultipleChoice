@@ -69,9 +69,9 @@
 	<option value="tense">tense</option>
       </select>
       but stable peace.
-      </p>
+    </p>
 
-      <p>
+    <p>
       Then came the first
       <select name="word10">
 	<option value="">-- choose --</option>
@@ -121,13 +121,13 @@
 	<option value="accumulation">accumulation</option>
       </select>
       . 
-</p>
+    </p>
 
-<p>
+    <p>
 But Fischer was writing a different story.
-</p>
+    </p>
 
-<p>
+    <p>
 Piece by piece, he tightened his position. His rooks aligned with 
       <select name="word17">
 	<option value="">-- choose --</option>
@@ -157,9 +157,9 @@ Piece by piece, he tightened his position. His rooks aligned with
 	<option value="accumulating">accumulating</option>
       </select>
       like pressure beneath the surface of a faultline.
-</p>
+    </p>
 
-<p>
+    <p>
       And then, like a plot twist that 
       <select name="word21">
 	<option value="">-- choose --</option>
@@ -175,13 +175,13 @@ Piece by piece, he tightened his position. His rooks aligned with
 	<option value="innocuously">innocuously</option>
       </select>
       on a3 for the span of 11 moves suddenly stirred.
-</p>
+    </p>
 
-<p>
+    <p>
       <b>Qa3!</b>
-</p>
+    </p>
 
-<p>
+    <p>
       Her single, sweeping arc across the board was a move that felt less like strategy and more like revelation. The queen, once harmless and 
       <select name="word23">
 	<option value="">-- choose --</option>
@@ -232,9 +232,9 @@ Piece by piece, he tightened his position. His rooks aligned with
 	<option value="applauded">applauded</option>
       </select>
       the very structure upon which his position stood. 
-</p>
+    </p>
 
-<p>
+    <p>
 The audience in Reykjavik felt it. Even through the 
 <select name="word30">
   <option value="">-- choose --</option>
@@ -243,7 +243,9 @@ The audience in Reykjavik felt it. Even through the
   <option value="counterplay">counterplay</option>
 </select>
 , you can feel it.
+    </p>
 
+    <p>
 This was no mere attack by the queen. Rather, it was her 
 <select name="word31">
   <option value="">-- choose --</option>
@@ -259,7 +261,9 @@ arrival as a prima donna stepping onto the stage her maestro Fischer had
   <option value="ostensibly">ostensibly</option>
 </select>
 prepared for her.
+    </p>
 
+    <p>
 Spassky tried to 
 <select name="word33">
   <option value="">-- choose --</option>
@@ -304,9 +308,7 @@ had been Fischer's earlier
   <option value="menaces">menaces</option>
   <option value="replacements">replacements</option>
 </select>
-.
-
-The queen's swing had not been an 
+.The queen's swing had not been an 
 <select name="word39">
   <option value="">-- choose --</option>
   <option value="isolated">isolated</option>
@@ -328,7 +330,9 @@ of a plan that had been unfolding quietly in the
   <option value="fatal">fatal</option>
 </select>
 harmlessness of her earlier moves.
+    </p>
 
+    <p>
 By the time Fischer's rooks crashed through, Spassky's fate was sealed. He sat motionless, 
 <select name="word42">
   <option value="">-- choose --</option>
@@ -344,8 +348,6 @@ the reality of what had happened, and when he finally resigned, he did something
   <option value="subtle">subtle</option>
 </select>
 : he stood up and applauded his opponent.
-
-
     </p>
   </body>
 </html>
