@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <p>
+      This is widely considered one of the greatest games ever played. It is the one where Spassky 
+      <select name="word01">
+        <option value="">-- choose --</option>
+        <option value="benignly">benignly</option>
+        <option value="famously">famously</option>
+        <option value="symmetrically">symmetrically</option>
+      </select>
+      stood up and applauded Fischer at the end. For the first twenty moves, the game unfolded with the calm 
+      <select name="word02">
+        <option value="">-- choose --</option>
+        <option value="objective">objective</option>
+        <option value="notation">notation</option>
+        <option value="inevitability">inevitability</option>
+      </select>
+      of a well-structured argument. Fischer developed his pieces with 
+      <select name="word03">
+	<option value="">-- choose --</option>
+	<option value="objective">objective</option>
+	<option value="precarious">precarious</option>
+	<option value="isolated">isolated</option>
+      <select name="word04">
+	<option value="">-- choose --</option>
+	<option value="prognosis">prognosis</option>
+	<option value="hindsight">hindsight</option>
+	<option value="impulse">impulse</option>
+      </select>
+      Spassky responded with equal 
+      <select name="word05">
+	<option value="">-- choose --</option>
+	<option value="trajectory">trajectory</option>
+	<option value="poise">poise</option>
+	<option value="friction">friction</option>
+      </select>      
+      , his defenses credible, his structure effective, and his position powerful in its quiet 
+      <select name="word06">
+	<option value="">-- choose --</option>
+	<option value="resilience">resilience</option>
+	<option value="adherent">adherent</option>
+	<option value="menace">menace</option>
+      </select>
+      .
+    </p>
+
+    <p>
+      Nothing on the board suggested violence. The queenside was a landscape of 
+      <select name="word07">
+        <option value="">-- choose --</option>
+        <option value="impulse">impulse</option>
+        <option value="principle">principle</option>
+        <option value="symmetry">symmetry</option>
+      </select>
+      --pawns mirroring pawns, bishops eyeing each other across long diagonals like 
+      <select name="word08">
+	<option value="">-- choose --</option>
+	<option value="diplomats">diplomats</option>
+	<option value="adherents">adherents</option>
+	<option value="frictions">frictions</option>
+      </select>
+      maintaining a 
+      <select name="word09">
+	<option value="">-- choose --</option>
+	<option value="diagonal">diagonal</option>
+	<option value="hindsight">hindsight</option>
+	<option value="tense">tense</option>
+      </select>
+      but stable peace.
+      </p>
+
+      <p>
+      Then came the first
+      <select name="word10">
+	<option value="">-- choose --</option>
+	<option value="impulse">impulse</option>
+	<option value="perturbation">perturbation</option>
+	<option value="supporter">supporter</option>
+      </select>
+      : Fischer's queen stepped to Qa4, then Qa3, a slow 
+      <select name="word11">
+	<option value="">-- choose --</option>
+	<option value="migration">migration</option>
+	<option value="accumulation">accumulation</option>
+	<option value="principle">principle</option>
+      </select>
+      that looked almost
+      <select name="word12">
+	<option value="">-- choose --</option>
+	<option value="effective">effective</option>
+	<option value="ornamental">ornamental</option>
+	<option value="speculative">speculative</option>
+      </select>
+      as if she were a prospector merely observing the battlefield rather than preparing to alter the <select name="word13">
+	<option value="">-- choose --</option>
+	<option value="trajectory">trajectory</option>
+	<option value="menace">menace</option>
+	<option value="subtlety">subtlety</option>
+      </select>
+      of the entire game. Spassky, a lifelong 
+      <select name="word14">
+	<option value="">-- choose --</option>
+	<option value="trajectory">trajectory</option>
+	<option value="adherent">adherent</option>
+	<option value="faultline">faultline</option>
+      </select>
+      to classical principles of chess theory, saw nothing immediately threatening. The queen seemed 
+      <select name="word15">
+	<option value="">-- choose --</option>
+	<option value="precise">precise</option>
+	<option value="resilient">resilient</option>
+	<option value="ornamental">ornamental</option>
+      </select>
+      , a supporter rather than an 
+      <select name="word16">
+	<option value="">-- choose --</option>
+	<option value="adherent">adherent</option>
+	<option value="antagonist">antagonist</option>
+	<option value="accumulation">accumulation</option>
+      </select>
+      . 
+</p>
+
+<p>
+But Fischer was writing a different story.
+</p>
+
+<p>
+Piece by piece, he tightened his position. His rooks aligned with 
+      <select name="word17">
+	<option value="">-- choose --</option>
+	<option value="precision">precision</option>
+	<option value="hindsight">hindsight</option>
+	<option value="faultlines">faultlines</option>
+      </select>
+      , his pawns advanced with deliberate restraint, and his knights repositioned with the kind of quiet menace that only becomes clear in 
+      <select name="word18">
+	<option value="">-- choose --</option>
+	<option value="symmetry">symmetry</option>
+	<option value="arrival">arrival</option>
+	<option value="hindsight">hindsight</option>
+      </select>
+	. Soon Spassky's defenses began to 
+      <select name="word19">
+	<option value="">-- choose --</option>
+	<option value="speculate">speculate</option>
+	<option value="migrate">migrate</option>
+	<option value="impede">impede</option>
+      </select>
+      each other, subtle frictions 
+      <select name="word20">
+	<option value="">-- choose --</option>
+	<option value="repositioning">repositioning</option>
+	<option value="redefining">redefining</option>
+	<option value="accumulating">accumulating</option>
+      </select>
+      like pressure beneath the surface of a faultline.
+</p>
+
+<p>
+      And then, like a plot twist that 
+      <select name="word21">
+	<option value="">-- choose --</option>
+	<option value="aligned">aligned</option>
+	<option value="redefined">redefined</option>
+	<option value="deliberated">deliberated</option>
+      </select>
+      everything that came before it, the queen that had been sitting 
+      <select name="word22">
+	<option value="">-- choose --</option>
+	<option value="ostensibly">ostensibly</option>
+	<option value="objectively">objectively</option>
+	<option value="innocuously">innocuously</option>
+      </select>
+      on a3 for the span of 11 moves suddenly stirred.
+</p>
+
+<p>
+      <b>Qa3!</b>
+</p>
+
+<p>
+      Her single, sweeping arc across the board was a move that felt less like strategy and more like revelation. The queen, once harmless and 
+      <select name="word23">
+	<option value="">-- choose --</option>
+	<option value="benign">benign</option>
+	<option value="futile">futile</option>
+	<option value="sanguine">sanguine</option>
+      </select>
+      , now materialized on the kingside with 
+      <select name="word24">
+	<option value="">-- choose --</option>
+	<option value="lethal">lethal</option>
+	<option value="precarious">precarious</option>
+	<option value="sanguine">sanguine</option>
+      </select>
+      intent. The entire 
+      <select name="word25">
+	<option value="">-- choose --</option>
+	<option value="exposure">exposure</option>
+	<option value="maneuver">maneuver</option>
+	<option value="prognosis">prognosis</option>
+      </select>
+      of Spassky's strategic position changed instantly. What had been a stable, 
+      <select name="word26">
+	<option value="">-- choose --</option>
+	<option value="sanguine">sanguine</option>
+	<option value="futile">futile</option>
+	<option value="subtle">subtle</option>
+      </select>
+      march toward a feasible victory now became a 
+      <select name="word27">
+	<option value="">-- choose --</option>
+	<option value="supreme">supreme</option>
+	<option value="sheltered">sheltered</option>
+	<option value="precarious">precarious</option>
+      </select>
+      drift toward a highly probable defeat. Spassky's king, previously sheltered, now stood 
+      <select name="word28">
+	<option value="">-- choose --</option>
+	<option value="feasible">feasible</option>
+	<option value="exposed">exposed</option>
+	<option value="lethal">lethal</option>
+      </select>
+      to a threat that 
+      <select name="word29">
+	<option value="">-- choose --</option>
+	<option value="regrouped">regrouped</option>
+	<option value="eroded">eroded</option>
+	<option value="applauded">applauded</option>
+      </select>
+      the very structure upon which his position stood. 
+</p>
+
+<p>
+The audience in Reykjavik felt it. Even through the 
+<select name="word30">
+  <option value="">-- choose --</option>
+  <option value="notation">notation</option>
+  <option value="trajectory">trajectory</option>
+  <option value="counterplay">counterplay</option>
+</select>
+, you can feel it.
+
+This was no mere attack by the queen. Rather, it was her 
+<select name="word31">
+  <option value="">-- choose --</option>
+  <option value="supreme">supreme</option>
+  <option value="benign">benign</option>
+  <option value="subtle">subtle</option>
+</select>
+arrival as a prima donna stepping onto the stage her maestro Fischer had 
+<select name="word32">
+  <option value="">-- choose --</option>
+  <option value="meticulously">meticulously</option>
+  <option value="feasibly">feasibly</option>
+  <option value="ostensibly">ostensibly</option>
+</select>
+prepared for her.
+
+Spassky tried to 
+<select name="word33">
+  <option value="">-- choose --</option>
+  <option value="regroup">regroup</option>
+  <option value="advance">advance</option>
+  <option value="resign">resign</option>
+</select>
+, but Fischer's pieces were already 
+<select name="word34">
+  <option value="">-- choose --</option>
+  <option value="coordinated">coordinated</option>
+  <option value="eroded">eroded</option>
+  <option value="strained">strained</option>
+</select>
+with 
+<select name="word35">
+  <option value="">-- choose --</option>
+  <option value="ineluctable">ineluctable</option>
+  <option value="innocuous">innocuous</option>
+  <option value="precarious">precarious</option>
+</select>
+harmony.
+
+Every tactic Spassky attempted in defense was 
+<select name="word36">
+  <option value="">-- choose --</option>
+  <option value="futile">futile</option>
+  <option value="viable">viable</option>
+  <option value="applicable">applicable</option>
+</select>
+. Each move only revealed how 
+<select name="word37">
+  <option value="">-- choose --</option>
+  <option value="premeditated">premeditated</option>
+  <option value="speculative">speculative</option>
+  <option value="ornamental">ornamental</option>
+</select>
+had been Fischer's earlier 
+<select name="word38">
+  <option value="">-- choose --</option>
+  <option value="maneuvers">maneuvers</option>
+  <option value="menaces">menaces</option>
+  <option value="replacements">replacements</option>
+</select>
+.
+
+The queen's swing had not been an 
+<select name="word39">
+  <option value="">-- choose --</option>
+  <option value="isolated">isolated</option>
+  <option value="supreme">supreme</option>
+  <option value="terminal">terminal</option>
+</select>
+tactic; it was the 
+<select name="word40">
+  <option value="">-- choose --</option>
+  <option value="culmination">culmination</option>
+  <option value="impulse">impulse</option>
+  <option value="hazard">hazard</option>
+</select>
+of a plan that had been unfolding quietly in the 
+<select name="word41">
+  <option value="">-- choose --</option>
+  <option value="ostensible">ostensible</option>
+  <option value="benign">benign</option>
+  <option value="fatal">fatal</option>
+</select>
+harmlessness of her earlier moves.
+
+By the time Fischer's rooks crashed through, Spassky's fate was sealed. He sat motionless, 
+<select name="word42">
+  <option value="">-- choose --</option>
+  <option value="absorbing">absorbing</option>
+  <option value="advancing">advancing</option>
+  <option value="materializing">materializing</option>
+</select>
+the reality of what had happened, and when he finally resigned, he did something 
+<select name="word43">
+  <option value="">-- choose --</option>
+  <option value="unprecedented">unprecedented</option>
+  <option value="applicable">applicable</option>
+  <option value="subtle">subtle</option>
+</select>
+: he stood up and applauded his opponent.
+
+
+    </p>
+  </body>
+</html>
+
