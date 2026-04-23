@@ -22,6 +22,7 @@
 	<option value="objective">objective</option>
 	<option value="precarious">precarious</option>
 	<option value="isolated">isolated</option>
+      </select>
       <select name="word04">
 	<option value="">-- choose --</option>
 	<option value="prognosis">prognosis</option>
